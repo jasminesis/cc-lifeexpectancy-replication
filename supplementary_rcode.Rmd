@@ -144,7 +144,6 @@ countrycodes <- read.csv("https://raw.githubusercontent.com/lukes/ISO-3166-Count
          COUNTRY = name) %>%
   mutate(ISO3 = CNTRY) %>%
   select(COUNTRY, CNTRY, ISO3)
-#  read.csv("data/LANcET_CCMORTDATA.csv",colClasses=c("CNTRY"="character"))
 
 ###   Getting a country list from the HMD
 Countries <- getHMDcountries()

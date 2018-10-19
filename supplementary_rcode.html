@@ -1734,7 +1734,6 @@ countrycodes &lt;- read.csv(&quot;https://raw.githubusercontent.com/lukes/ISO-31
          COUNTRY = name) %&gt;%
   mutate(ISO3 = CNTRY) %&gt;%
   select(COUNTRY, CNTRY, ISO3)
-#  read.csv(&quot;data/LANcET_CCMORTDATA.csv&quot;,colClasses=c(&quot;CNTRY&quot;=&quot;character&quot;))
 
 ###   Getting a country list from the HMD
 Countries &lt;- getHMDcountries()
