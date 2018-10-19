@@ -1,9 +1,11 @@
 ---
-title: "Climate Change Projected to Reduce European Life Expectancy"
+title: Inaction on climate change projected to cost one year of life in some European
+  countries
 output:
-  word_document: default
+  html_document:
+    df_print: paged
   pdf_document: default
-date: "April 5, 2018"
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 4. Import the Global Burden of Disease data. This data is located on github. 
 5. Download all of the Human Mortality Database data.
 
-To successfully run this code, several R pacakgse must be installed and these
+To successfully run this code, several R packages must be installed and these
 packages are located just below this text section but are tidyverse, HMHFDplus,
 tmap, tmaptools, RColorBrewer, data.table, and getPass.
 
@@ -317,7 +319,7 @@ ggplot(lt_lancet, aes(x=RANK, y=DIF_MID, ymin = DIF_LOW, ymax = DIF_HIGH, label=
 This chunk of code reproduecs Figure 2.
 ```{r Figure2}
 
-data(Europe)
+load("DATA/Europe.rda")
 Europe2 <- append_data(Europe, lt_lancet, key.shp = "iso_a3", key.data = "ISO3", ignore.na = TRUE)
 
 bbeur <- bb(Europe2, xlim = c(0,0.75), ylim=c(0,1), relative = TRUE)

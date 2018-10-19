@@ -1,8 +1,10 @@
-# Climate change projected to reduce European life expectancy
+# Inaction on climate change projected to cost one year of life in some European
 
 This project converts published estimates of excess mortality for 28 European countries in life expectancy at birth differentials.
 
 This repository contains the data and code to verify these findings. If you find any problems, let me know!
+
+In order to replicate our results, simply open the `supplementary_rcode.Rmd` file, follow the instructions located there, and run the code. All necessary files are already located within this repository.
 
 # Abstract
 > Climate change related estimates of excess mortality clearly demonstrate the dramatic impact
