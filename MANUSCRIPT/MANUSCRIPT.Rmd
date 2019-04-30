@@ -5,12 +5,6 @@ title: Inaction on climate change projected to reduce European life expectancy
 blinded: 0
 
 authors: 
-- name: Mathew E. Hauer
-  # thanks: The authors gratefully acknowledge ...
-  affiliation: Department of Sociology, Florida State University
-
-- name: Alexis R. Santos
-  affiliation: Human Development and Family Studies, Pennsylvania State University
 
 keywords:
 - climate change
