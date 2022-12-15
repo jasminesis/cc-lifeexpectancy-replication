@@ -1,9 +1,9 @@
 ###------Figure GBD Death Distribution-----
 ## @knitr figure-GBD-death-distribution
 
-GBD_data <- read.csv("data/GBD_data.csv") %>%
+GBD_data <- read.csv("./MANUSCRIPT/R/DATA-PROCESSED/GBD_data.csv") %>%
   #mutate(perdist = log(val)) %>%
-  group_by(countrycode, Age) %>%
+  group_by(Country.code, Age) %>%
   summarise(meanval = mean(val),
             upperval = mean(upper),
             lowerval = mean(lower)) %>%

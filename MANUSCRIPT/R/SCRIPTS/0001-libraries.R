@@ -40,7 +40,8 @@ pkgs <- c(
   "openxlsx",    # Microsoft Excel Files
   "HMDHFDplus",  # HMD data
   "tmap",        # Mapping
-  "tmapptools",  # Mapping tools
+  # NOTE: tmapptools is not available for this version of R - is it tmaptools or tmapptools?
+  # "tmapptools",  # Mapping tools
   "RColorBrewer",# Colors
   "kableExtra",  # Table making
   "knitr",       # Knitting
@@ -58,6 +59,11 @@ if(!sum(!p_isinstalled(pkgs))==0){
     character.only = TRUE
   )
 }
+# NOTE: I wrote this cos above was not working
+for (item in pkgs[!p_isinstalled(pkgs)]){
+  install.packages(item)
+}
+
 
 # load the packages
 p_load(pkgs, character.only = TRUE)

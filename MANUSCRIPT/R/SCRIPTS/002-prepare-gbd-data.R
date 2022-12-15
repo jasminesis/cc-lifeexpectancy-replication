@@ -1,11 +1,14 @@
 ###------prepare GBD Data-----
 ## @knitr prepare-gbd-data
 
+# gbd_94a <- read_csv("./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.csv")
+# gbd_516 <- read_csv("./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-5167f43d-1.csv")
+# gbd_559 <- read_csv("./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-559487f9-1.csv")
 
 # Downloading and unzipping the GBD Data
 download.file("http://s3.healthdata.org/gbd-api-2017-public/94a6924295130f8efecc9f9c5185038d_files/IHME-GBD_2017_DATA-94a69242-1.zip",
-                              "./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.zip")
-unzip(zipfile='./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.zip', exdir = "Manuscript/R/DATA-RAW")
+                              "../DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.zip")
+unzip(zipfile='../DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.zip', exdir = "../DATA-RAW")
 
 # Loading in the GBD Data
 gbd <- read_csv("./Manuscript/R/DATA-RAW/IHME-GBD_2017_DATA-94a69242-1.csv") %>%
